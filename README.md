@@ -59,7 +59,18 @@ akun3@gmail.com|password789
 
 ### 2. Sesuaikan Target URL
 
-Pastikan target URL di `bot.js` sudah sesuai (default: `http://localhost:20128/`).
+Target URL bisa diatur via environment variable `TARGET_URL` (default: `http://localhost:20128/`).
+
+```bash
+# Linux/Mac
+TARGET_URL=http://your-server:20128 node bot.js
+
+# Windows CMD
+set TARGET_URL=http://your-server:20128 && node bot.js
+
+# Windows PowerShell
+$env:TARGET_URL="http://your-server:20128"; node bot.js
+```
 
 ## Penggunaan
 

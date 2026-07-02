@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
-const TARGET_URL = 'http://43.159.60.190:20128/';
+const TARGET_URL = process.env.TARGET_URL || 'http://localhost:20128/';
 const AKUN_FILE = path.join(__dirname, 'akun.txt');
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
